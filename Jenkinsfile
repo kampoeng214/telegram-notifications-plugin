@@ -3,7 +3,7 @@
 node('linux') {
     stage('Checkout') {
         checkout scm
-    }
+    } 
     stage('Build') {
         String mvntool = tool name: "mvn", type: 'hudson.tasks.Maven$MavenInstallation'
         String jdktool = tool name: "jdk8", type: 'hudson.model.JDK'
